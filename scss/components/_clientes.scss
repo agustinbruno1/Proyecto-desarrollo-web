@@ -1,0 +1,109 @@
+@import '../base/maps';
+@import '../base/mixins';
+
+
+
+.clientesGeneral{
+    color: map-get($map: $margenes-parrafos, $key: color-gral);
+    margin: map-get($map: $margenes-parrafos, $key: margenes-generales);
+
+    h2{
+        @include titulos;
+    }
+
+    .clientesImgGeneral{ 
+        font-family: $fuente-parrafos;
+        display: grid;
+        grid-template-rows: 300px 300px;
+        grid-template-columns: 300px 300px 300px;
+        justify-content: space-around;
+        justify-items: center;            
+    }
+    img{
+        @include imagen(250px,250px);
+        border-radius: 200px;
+    }
+
+}
+
+/* Responsive */
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .clientesGeneral{        
+        margin: 0 20px;
+    }
+
+    .clientesGeneral h2{        
+        padding-top: 70px;
+        margin-top: 30px;
+        margin-bottom: 100px;        
+        font-size: 30px;
+    }
+    .clientesImg img{
+        height: 150px;
+        width: 150px;
+    }
+    .clientesImgGeneral{
+        display: grid;
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 200px 200px 200px;
+        justify-content: space-around;
+        align-items: center;
+        justify-items: center;        
+        grid-row-gap: 40px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .clientesGeneral{        
+        margin: 0 20px;
+    }
+
+    .clientesGeneral h2{        
+        padding-top: 40px;
+        margin-top: 30px;
+        margin-bottom: 50px;        
+        font-size: 20px;
+    }
+    .clientesImg img{
+        height: 100px;
+        width: 100px;
+    }
+    .clientesImgGeneral{
+        display: grid;
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 200px 200px 200px;
+        justify-content: space-around;
+        align-items: center;
+        justify-items: center;        
+        grid-row-gap: 40px;
+    }
+}
+
+@media (max-width: 575px){
+    .clientesGeneral h2{        
+        padding-top: 32px;
+        margin-top: 30px;
+        margin-bottom: 30px;        
+        font-size: 12px;
+    }
+    .clientesImg img{
+        height: 50px;
+        width: 50px;
+    }
+    .clientesImgGeneral{
+        display: grid;
+        grid-template-rows: 100px 100px;
+        grid-template-columns: 100px 100px 100px;
+        justify-content: space-around;
+        align-items: center;
+        justify-items: center;        
+        grid-row-gap: 40px;
+    }
+}
+
+
+
+
+/* Responsive */
+

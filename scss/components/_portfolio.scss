@@ -1,0 +1,58 @@
+@import '../base/maps';
+@import '../base/mixins';
+
+.portfolioGeneral{
+    
+    color: map-get($map: $margenes-parrafos, $key: color-gral);
+    margin: map-get($map: $margenes-parrafos, $key: margenes-generales);
+    
+    h2{
+        @include titulos;
+    }
+}
+
+/* Responsive */
+
+@media (min-width: 768px) and (max-width: 1024px){
+    
+    .portfolioGeneral{        
+        margin: 0 20px;
+    }
+    
+    .portfolioGeneral h2{        
+        padding-top: 70px;
+        margin-top: 30px;
+        margin-bottom: 80px;        
+        font-size: 30px;
+    }    
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .portfolioGeneral{        
+        margin: 0 10px;
+    }
+    
+    .portfolioGeneral h2{        
+        padding-top: 40px;
+        margin-top: 30px;
+        margin-bottom: 50px;        
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 575px){
+    .portfolioGeneral{        
+        margin: 0 5px;
+    }
+    
+    .portfolioGeneral h2{        
+        padding-top: 32px;
+        margin-top: 30px;
+        margin-bottom: 30px;        
+        font-size: 12px;
+    }
+}
+/* Responsive */
+
+
+

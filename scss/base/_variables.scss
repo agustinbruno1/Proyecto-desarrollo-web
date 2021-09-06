@@ -1,0 +1,24 @@
+// Fonts
+
+// Bienvenida
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+// Titulos y descripciones
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+// Parrafos y descripciones
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+$fuente-titulos:'Quicksand', sans-serif;
+$fuente-parrafos: 'Lato', sans-serif;
+$fuente-bienvenida: 'Press Start 2P', cursive;
+
+// Fonts
+
+// Colores
+
+$bg-color-body: #52006A;
+$bg-color-nav-footer: black;
+$color-texto-nav: #FF7600;
+$color-texto-footer: #FFA900;
+$color-titulos-parrafos: white;

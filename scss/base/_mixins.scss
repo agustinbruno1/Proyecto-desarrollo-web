@@ -1,0 +1,27 @@
+
+
+@mixin titulos {
+        text-align: center;
+        padding-top: 100px;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        font-family: $fuente-titulos;
+        font-size: 30px;    
+}
+
+@mixin imagen($alto,$ancho){
+        height: $alto;
+        width: $ancho;
+}
+
+@mixin boton($bg) {
+        background-color: $bg;
+        
+        @if $bg == $bg-color-nav-footer{
+                color: $color-texto-footer;
+                border-color: $color-texto-footer;
+        } @else{
+                color: $bg-color-nav-footer;
+                border-color: $color-texto-footer;
+        }
+}

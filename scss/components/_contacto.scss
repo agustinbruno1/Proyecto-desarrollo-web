@@ -1,0 +1,200 @@
+@import '../base/mixins';
+
+
+#contacto{
+    background-color: $bg-color-nav-footer;
+    
+    .contactoGeneral{     
+        height: 800px;
+        
+        
+        h2{ 
+            @include titulos;  
+            color: $color-texto-footer;  
+            
+        }
+    }
+
+    .contactoContainerInfo{
+        color: $color-texto-footer;
+        font-family: $fuente-parrafos;    
+    }
+
+    .contactoContainerGrid{ 
+        padding-top: 5%;   
+        display: grid;
+        grid-template-columns: 300px 300px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contactoContainerGridItem1{
+        color: $color-texto-footer;
+    }
+
+    .contactoContainerGridItem2{
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: 200px 200px;
+        justify-items: center;
+    }
+
+    .contactoContainerLink{
+        align-self: flex-end;
+        
+    }
+
+    .btn{
+        @include boton($bg-color-nav-footer);
+        
+
+        &:hover{
+            
+            @include boton($color-texto-footer);
+        }
+    }
+}
+
+/* Responsive */
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .contactoGeneral{         
+        height: 600px;         
+    }
+
+    .contactoGeneral h2{         
+        font-size: 30px;
+    }    
+
+    .contactoContainerGrid{ 
+        padding-top: 5%;   
+        display: grid;
+        grid-template-columns: 300px 300px ;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .contactoContainerGridItem1{
+        font-size: 90%;
+    }   
+
+    .contactoContainerGridItem2{
+        display: grid;
+        grid-template-rows: 200px 200px;
+        align-items: center;
+    }
+
+    .contactoContainerInfo{
+        word-spacing: 5px; 
+        font-size: 90%;
+    }
+
+    .contactoContainerLink img{
+        height: 20%;
+        width: 20%;    
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .contactoGeneral{             
+        height: 600px;         
+    }
+
+    .contactoGeneral h2{         
+        font-size: 20px;
+    }    
+
+    .contactoContainerGrid{ 
+        padding-top: 5%;   
+        display: grid;
+        grid-template-columns: 200px 200px;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .contactoContainerGridItem1{
+        font-size: 70%;
+    }   
+
+    .contactoContainerGridItem2{
+        display: grid;
+        grid-template-columns: 200px;
+        grid-template-rows: 200px 200px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactoContainerInfo{
+        word-spacing: 5px; 
+        font-size: 70%;
+    }        
+
+    .contactoContainerLink img{
+        height: 15%;
+        width: 15%;    
+    }
+    
+    .form-control{
+        font-size: 90%;            
+    }
+    
+    .btn{
+        
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 575px){
+    .contactoGeneral{
+        margin: 0 10px; 
+        height: 500px;         
+    }
+
+    .contactoGeneral h2{         
+        font-size: 12px;
+    }    
+
+    .contactoContainerGrid{ 
+        padding-top: 5%;   
+        display: grid;
+        grid-template-columns: 100px 150px;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .contactoContainerGridItem1{
+        font-size: 50%;
+    }   
+
+    .contactoContainerGridItem2{
+        display: grid;
+        grid-template-columns: 150px;
+        grid-template-rows: 150px 100px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactoContainerInfo{
+        word-spacing: 5px; 
+        font-size: 50%;
+    }        
+
+    .contactoContainerLink img{
+        height: 15%;
+        width: 15%;    
+    }
+    
+    .form-control{
+        font-size: 70%;            
+    }
+    
+    .btn{
+        
+        font-size: 70%;
+    }
+}
+
+/* Responsive */

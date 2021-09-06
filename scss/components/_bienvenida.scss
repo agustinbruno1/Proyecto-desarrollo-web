@@ -1,0 +1,87 @@
+#inicio{
+    height: 600px;
+    padding-top: 150px;
+    margin-bottom: 100px;
+    
+    .bienvenida{
+        margin: auto;
+        display: table;
+        
+        h1{            
+            font-family: $fuente-bienvenida;
+            color: $bg-color-nav-footer;    
+            letter-spacing: 20px;    
+            font-size: 100px;
+            transform: scale(1, 3);
+            float: left;
+            position: relative;
+            margin-top: 200px;
+            
+            span{
+                position: absolute;
+                right: 0;
+                width: 0;
+                background-color: $bg-color-body;    
+                animation: maquina 2s steps(7) 1s 1 normal both,
+                blinkTextCursor 500ms steps(7) infinite normal;
+
+                @keyframes maquina{
+                    from{
+                        width: 100%;
+                    }
+                
+                    to{
+                        width: 0;
+                    }
+                }
+                @keyframes blinkTextCursor {
+                    from {
+                          color: rgba(0, 0, 0, 0.75);
+                    }
+                    to {
+                          color: transparent;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+// Medias Query
+
+/* Estilos responsive bienvenida */
+
+@media (min-width: 768px) and (max-width: 1024px){    
+
+        .bienvenida h1{  
+            letter-spacing: 10px;    
+            font-size: 100px;
+            transform: scale(0.75, 2);        
+            margin-top: 200px;
+            width: 100%;                      
+        }
+    }
+
+@media (min-width: 576px) and (max-width: 767px){  
+    
+        .bienvenida h1{            
+            letter-spacing: 5px;    
+            font-size: 30px;
+            transform: scale(0.2, 1);        
+            margin-top: 200px;
+            width: 100%;                      
+        }
+    }   
+
+@media (max-width: 575px){   
+
+        .bienvenida h1{            
+            letter-spacing: 5px;    
+            font-size: 30px;
+            transform: scale(0.2, 1);        
+            margin-top: 200px;
+            width: 100%;                      
+        }
+    }
+     /* Estilos responsive bienvenida */
