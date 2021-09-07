@@ -59,7 +59,7 @@ body {
 /* Responsive */
 @media (min-width: 768px) and (max-width: 1024px) {
   .navegadorGral {
-    font-size: 75%;
+    font-size: 65%;
   }
 
   .navegadorLogo img {
@@ -282,7 +282,6 @@ body {
   .contactoGeneral {
     height: 600px;
   }
-
   .contactoGeneral h2 {
     font-size: 30px;
   }
@@ -320,7 +319,6 @@ body {
   .contactoGeneral {
     height: 600px;
   }
-
   .contactoGeneral h2 {
     font-size: 20px;
   }
@@ -470,17 +468,17 @@ body {
 @media (min-width: 576px) and (max-width: 767px) {
   #inicio .bienvenida h1 {
     letter-spacing: 5px;
-    font-size: 100px;
-    transform: scale(0.5, 1.5);
+    font-size: 80px;
+    transform: scale(0.75, 1.5);
     margin-top: 200px;
     width: 100%;
   }
 }
 @media (max-width: 575px) {
   #inicio .bienvenida h1 {
-    letter-spacing: 5px;
-    font-size: 100px;
-    transform: scale(0.5, 1);
+    letter-spacing: 3px;
+    font-size: 50px;
+    transform: scale(0.2, 0.8);
     margin-top: 200px;
     width: 100%;
   }
@@ -509,7 +507,7 @@ body {
 .clientesGeneral img {
   height: 250px;
   width: 250px;
-  border-radius: 200px;
+  border-radius: 201px;
 }
 
 /* Responsive */
@@ -518,16 +516,11 @@ body {
     margin: 0 20px;
   }
 
-  .clientesGeneral h2 {
+  h2 {
     padding-top: 70px;
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     font-size: 30px;
-  }
-
-  .clientesImg img {
-    height: 150px;
-    width: 150px;
   }
 
   .clientesImgGeneral {
@@ -538,6 +531,11 @@ body {
     align-items: center;
     justify-items: center;
     grid-row-gap: 40px;
+  }
+  .clientesImgGeneral img {
+    height: 200px;
+    width: 200px;
+    border-radius: 170px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
