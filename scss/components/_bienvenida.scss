@@ -54,34 +54,46 @@
 
 @media (min-width: 768px) and (max-width: 1024px){    
 
-        .bienvenida h1{  
+    #inicio{
+        .bienvenida{  
+            h1{
             letter-spacing: 10px;    
             font-size: 100px;
             transform: scale(0.75, 2);        
             margin-top: 200px;
-            width: 100%;                      
+            width: 100%;
+        }                      
         }
     }
+}
 
 @media (min-width: 576px) and (max-width: 767px){  
     
-        .bienvenida h1{            
+    #inicio{
+        .bienvenida{
+            h1{           
             letter-spacing: 5px;    
-            font-size: 30px;
-            transform: scale(0.2, 1);        
+            font-size: 80px;
+            transform: scale(0.75, 1.5);        
             margin-top: 200px;
-            width: 100%;                      
+            width: 100%;
+        }                       
         }
-    }   
+    } 
+}  
 
 @media (max-width: 575px){   
 
-        .bienvenida h1{            
-            letter-spacing: 5px;    
-            font-size: 30px;
-            transform: scale(0.2, 1);        
+    #inicio{
+        .bienvenida{
+            h1{            
+            letter-spacing: 3px;    
+            font-size: 50px;
+            transform: scale(0.2, 0.8);        
             margin-top: 200px;
             width: 100%;                      
+            }
         }
     }
+}
      /* Estilos responsive bienvenida */

@@ -59,12 +59,12 @@
 
 @media (min-width: 768px) and (max-width: 1024px){
     .contactoGeneral{         
-        height: 600px;         
+        height: 600px; 
+        
+        h2{   
+            font-size: 30px;
+        }        
     }
-
-    .contactoGeneral h2{         
-        font-size: 30px;
-    }    
 
     .contactoContainerGrid{ 
         padding-top: 5%;   
@@ -98,11 +98,11 @@
 
 @media (min-width: 576px) and (max-width: 767px){
     .contactoGeneral{             
-        height: 600px;         
-    }
-
-    .contactoGeneral h2{         
-        font-size: 20px;
+        height: 600px; 
+        
+        h2{         
+            font-size: 20px;
+        }         
     }    
 
     .contactoContainerGrid{ 
