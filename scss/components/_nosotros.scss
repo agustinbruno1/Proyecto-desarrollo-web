@@ -21,58 +21,57 @@
 @media (min-width: 768px) and (max-width: 1024px){
     .nosotrosGeneral{  
         margin: 0 20px;
-    }
-    
-    .nosotrosGeneral h2{        
-        padding-top: 70px;
-        margin-top: 30px;
-        margin-bottom: 80px;        
-        font-size: 30px;
-    }
 
-    .nosotrosParrafo{
-        padding: 0 50px;        
-        word-spacing: 5px; 
-        font-size: 70%;       
-    }
+        h2{       
+            padding-top: 70px;
+            margin-top: 30px;
+            margin-bottom: 80px;        
+            font-size: 25px;
+        }
+            .nosotrosParrafo{
+                padding: 0 50px;        
+                word-spacing: 5px; 
+                font-size: 70%;       
+            }
+    }  
 }
 
 @media (min-width: 576px) and (max-width: 767px){
     .nosotrosGeneral{  
         margin: 0 20px;
-    }
-    
-    .nosotrosGeneral h2{        
-        padding-top: 40px;
-        margin-top: 30px;
-        margin-bottom: 50px;        
-        font-size: 20px;
-    }
 
-    .nosotrosParrafo{
-        padding: 0 30px;        
-        word-spacing: 5px; 
-        font-size: 50%;       
-    }
+        h2{                 
+            padding-top: 50px;
+            margin-top: 30px;
+            margin-bottom: 50px;        
+            font-size: 20px;
+        }
+            .nosotrosParrafo{
+                padding: 0 30px;        
+                word-spacing: 5px; 
+                font-size: 50%;       
+            }
+    }   
 }
+
 
 @media (max-width: 575px){ 
     .nosotrosGeneral{  
         margin: 0 10px;
-    }
-    
-    .nosotrosGeneral h2{        
-        padding-top: 32px;
-        margin-top: 30px;
-        margin-bottom: 30px;        
-        font-size: 12px;
-    }
 
-    .nosotrosParrafo{
-        padding: 0 20px;        
-        word-spacing: 3px; 
-        font-size: 40%;       
-    }
+        h2{        
+            padding-top: 32px;
+            margin-top: 30px;
+            margin-bottom: 30px;        
+            font-size: 12px;
+        }
+    
+            .nosotrosParrafo{
+                padding: 0 20px;        
+                word-spacing: 3px; 
+                font-size: 40%;       
+        }
+    }    
 }
 
 /* Responsive */
